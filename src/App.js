@@ -2,25 +2,25 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
-import Dashboard from './pages/Dashboard.jsx';
-import About from './pages/About.jsx';
-import Analytics from './pages/Analytics.jsx';
-import Comment from './pages/Comment.jsx';
-import Product from './pages/Product.jsx';
-import ProductList from './pages/ProductList.jsx';
+import ManageStaff from './pages/ManageStaff.jsx';
+import ViewReportedIssue from './pages/ViewReportedIssue.jsx';
+import ManageContatcs from './pages/ManageContatcs.jsx';
+import ManageProducts from './pages/ManageProducts.jsx';
+import ViewChangeRequest from './pages/ViewChangeRequest.jsx';
+import ViewRankList from './pages/ViewRankList.jsx';
 
 const App = () => {
   return (
     <BrowserRouter>
       <Sidebar>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/comment" element={<Comment />} />
-          <Route path="/analytics" element={<Analytics />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="/productList" element={<ProductList />} />
+          <Route path="/" element={<ManageStaff />} />
+          <Route path="/ManageStaff" element={<ManageStaff />} />
+          <Route path="/ViewReportedIssue" element={<ViewReportedIssue />} />
+          <Route path="/ManageProducts" element={<ManageProducts />} />
+          <Route path="/ManageContatcs" element={<ManageContatcs />} />
+          <Route path="/ViewChangeRequest" element={<ViewChangeRequest />} />
+          <Route path="/ViewRankList" element={<ViewRankList />} />
         </Routes>
       </Sidebar>
     </BrowserRouter>

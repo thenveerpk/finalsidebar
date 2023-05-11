@@ -1,12 +1,13 @@
+
 import React, { useState } from 'react';
 import {
     FaTh,
     FaBars,
-    FaUserAlt,
+    FaExclamation,
     FaRegChartBar,
     FaCommentAlt,
     FaShoppingBag,
-    FaThList
+    FaChartBar
 }from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
@@ -17,40 +18,41 @@ const Sidebar = ({children}) => {
     const menuItem=[
         {
             path:"/",
-            name:"Dashboard",
+            name:"ManageStaff",
             icon:<FaTh/>
         },
         {
-            path:"/about",
-            name:"About",
-            icon:<FaUserAlt/>
+            path:"/ViewReportedIssue",
+            name:"View Reported Issue",
+            icon:< FaExclamation/>
         },
         {
-            path:"/analytics",
-            name:"Analytics",
+            path:"/ManageContatcs",
+            name:"ManageContatcs",
             icon:<FaRegChartBar/>
         },
         {
-            path:"/comment",
-            name:"Comment",
-            icon:<FaCommentAlt/>
-        },
-        {
-            path:"/product",
-            name:"Product",
+            path:"/ManageProducts",
+            name:"ManageProducts",
             icon:<FaShoppingBag/>
         },
         {
-            path:"/productList",
-            name:"Product List",
-            icon:<FaThList/>
+            path:"/ViewChangeRequest",
+            name:"View Change Request",
+          
+            icon:<FaCommentAlt/>
+        },
+        {
+            path:"/ViewRankList",
+            name:"View RankList",
+            icon:<  FaChartBar/>
         }
     ]
     return (
         <div className="container">
            <div style={{width: isOpen ? "200px" : "50px"}} className="sidebar">
                <div className="top_section">
-                   <h1 style={{display: isOpen ? "block" : "none"}} className="logo">Logo</h1>
+                   <h2 style={{display: isOpen ? "block" : "none"}} className="logo">Manager</h2>
                    <div style={{marginLeft: isOpen ? "50px" : "0px"}} className="bars">
                        <FaBars onClick={toggle}/>
                    </div>
