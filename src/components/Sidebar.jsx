@@ -4,10 +4,11 @@ import {
     FaTh,
     FaBars,
     FaExclamation,
-    FaRegChartBar,
     FaCommentAlt,
     FaShoppingBag,
-    FaChartBar
+    FaChartBar,
+    FaMale,
+    FaAddressBook
 }from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
@@ -18,8 +19,14 @@ const Sidebar = ({children}) => {
     const menuItem=[
         {
             path:"/",
-            name:"ManageStaff",
+            name:"Dashboard",
             icon:<FaTh/>
+        },
+        {
+            path:"/ManageStaff",
+            name:"ManageStaff",
+          
+            icon:<FaMale/>
         },
         {
             path:"/ViewReportedIssue",
@@ -29,19 +36,21 @@ const Sidebar = ({children}) => {
         {
             path:"/ManageContatcs",
             name:"ManageContatcs",
-            icon:<FaRegChartBar/>
+            icon:<FaAddressBook/>
         },
         {
             path:"/ManageProducts",
             name:"ManageProducts",
             icon:<FaShoppingBag/>
         },
+        
         {
             path:"/ViewChangeRequest",
             name:"View Change Request",
           
             icon:<FaCommentAlt/>
         },
+        
         {
             path:"/ViewRankList",
             name:"View RankList",

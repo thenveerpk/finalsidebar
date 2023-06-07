@@ -3,7 +3,11 @@ import React from 'react';
 const ManageContatcs = () => {
     return (
         <div>
-            <h1>Manage Contatcs page</h1>
+            <a href='a.jsx'>link is here</a>
+            <ul>
+                <li>skjskd</li>
+                <li>hflkfd</li>
+            </ul>
         </div>
     );
 };
