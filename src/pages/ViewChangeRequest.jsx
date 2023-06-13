@@ -1,7 +1,10 @@
 import React from 'react';
+import Sidebar from '../components/Sidebar';
 
 const ViewChangeRequest = () => {
     return (
+        <Sidebar name1="Dashboard" name2="ManageStaff" name3="ViewReportedIssue" name4="ManageContatcs" name5="ManageProducts" name6="ViewChangeRequest" name7="ViewRankList">
+
         <div>
             <div className='staff' >
                 <h1 className='h2'> Change Requests</h1>
@@ -111,6 +114,7 @@ const ViewChangeRequest = () => {
                 </tr>
             </table>
         </div>
+        </Sidebar>
     );
 };
 

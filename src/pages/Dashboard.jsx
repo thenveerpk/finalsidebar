@@ -1,7 +1,9 @@
 import React from 'react';
 import './a.css';
+import Sidebar from '../components/Sidebar';
 const Dashboard= () => {
     return (
+        <Sidebar name1="Dashboard" name2="ManageStaff" name3="ViewReportedIssue" name4="ManageContatcs" name5="ManageProducts" name6="ViewChangeRequest" name7="ViewRankList">
         <div>
             <marquee>welcome manager</marquee>
             <div class="a">
@@ -68,7 +70,9 @@ const Dashboard= () => {
                     <td>0</td>
                 </tr>
             </table>
+
         </div>
+        </Sidebar>
     );
 };
 

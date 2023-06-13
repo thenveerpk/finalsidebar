@@ -13,47 +13,47 @@ import {
 import { NavLink } from 'react-router-dom';
 
 
-const Sidebar = ({children}) => {
+const Sidebar = (prop) => {
     const[isOpen ,setIsOpen] = useState(false);
     const toggle = () => setIsOpen (!isOpen);
     const menuItem=[
         {
             path:"/",
-            name:"Dashboard",
+            name:prop.name1,
             icon:<FaTh/>
         },
         {
-            path:"/ManageStaff",
-            name:"ManageStaff",
+            path:"/"+prop.name2,
+            name:prop.name2,
           
             icon:<FaMale/>
         },
         {
-            path:"/ViewReportedIssue",
-            name:"View Reported Issue",
+            path:"/"+prop.name3,
+            name:prop.name3,
             icon:< FaExclamation/>
         },
         {
-            path:"/ManageContatcs",
-            name:"ManageContatcs",
+            path:"/"+prop.name4,
+            name:prop.name4,
             icon:<FaAddressBook/>
         },
         {
-            path:"/ManageProducts",
-            name:"ManageProducts",
+            path:"/"+prop.name5,
+            name:prop.name5,
             icon:<FaShoppingBag/>
         },
         
         {
-            path:"/ViewChangeRequest",
-            name:"View Change Request",
+            path:"/"+prop.name6,
+            name:prop.name6,
           
             icon:<FaCommentAlt/>
         },
         
         {
-            path:"/ViewRankList",
-            name:"View RankList",
+            path:"/"+prop.name7,
+            name:prop.name7,
             icon:<  FaChartBar/>
         }
     ]
@@ -75,7 +75,7 @@ const Sidebar = ({children}) => {
                    ))
                }
            </div>
-           <main>{children}</main>
+            <main>{prop.children}</main> 
         </div>
     );
 };

@@ -1,10 +1,14 @@
 import React from 'react';
+import Sidebar from '../components/Sidebar';
+
 function Jst() {
     prompt("Enter information about the staff")
     
 }
 const ManageProducts = () => {
     return (
+        <Sidebar name1="Dashboard" name2="ManageStaff" name3="ViewReportedIssue" name4="ManageContatcs" name5="ManageProducts" name6="ViewChangeRequest" name7="ViewRankList">
+
         <div>
              <div className='staff' >
                 <h1 className='h2'>Products</h1>
@@ -95,6 +99,7 @@ const ManageProducts = () => {
                  
             </table>
         </div>
+        </Sidebar>
     );
 };
 

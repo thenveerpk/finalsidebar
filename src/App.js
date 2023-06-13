@@ -14,7 +14,6 @@ import ViewRankList from './pages/ViewRankList.jsx';
 const App = () => {
   return (
     <BrowserRouter>
-      <Sidebar>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/Dashboard" element={<Dashboard />} />
@@ -25,7 +24,6 @@ const App = () => {
           <Route path="/ViewChangeRequest" element={<ViewChangeRequest />} />
           <Route path="/ViewRankList" element={<ViewRankList />} />
         </Routes>
-      </Sidebar>
     </BrowserRouter>
   );
 };
